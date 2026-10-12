@@ -1,0 +1,1318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sandeep Mourya | Portfolio</title>
+<meta name="description" content="Sandeep Mourya, IIT Delhi graduate at Basic Home Loan. Product modules, payout reconciliation, CRM journeys and automations, plus machine learning and LLM projects.">
+<meta property="og:title" content="Sandeep Mourya | Portfolio">
+<meta property="og:description" content="Product modules, data analysis and automations shipped at Basic Home Loan, plus ML and LLM projects.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%90%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<style>
+:root {
+  --paper: #EDF2E8;
+  --grid: rgba(58, 108, 68, 0.08);
+  --grid-major: rgba(58, 108, 68, 0.15);
+  --surface: #F8FBF5;
+  --surface-2: #E1E9DB;
+  --ink: #1D241F;
+  --ink-2: #4A574D;
+  --rule: #C3D0BD;
+  --rule-strong: #7A8E75;
+  --accent: #B3261E;
+  --accent-ink: #FFFFFF;
+  --hl-1: #F5C518;
+  --hl-2: #F9DD7A;
+  --hl-3: #FCEFC2;
+  --hl-ink: #1D241F;
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+  --font: "Archivo", ui-sans-serif, "Segoe UI", system-ui, -apple-system, sans-serif;
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #121814;
+    --grid: rgba(170, 210, 170, 0.05);
+    --grid-major: rgba(170, 210, 170, 0.09);
+    --surface: #19211B;
+    --surface-2: #243026;
+    --ink: #E2EADF;
+    --ink-2: #A8B6AA;
+    --rule: #2C382F;
+    --rule-strong: #64786A;
+    --accent: #FF8A7A;
+    --accent-ink: #1A0E0C;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #121814;
+  --grid: rgba(170, 210, 170, 0.05);
+  --grid-major: rgba(170, 210, 170, 0.09);
+  --surface: #19211B;
+  --surface-2: #243026;
+  --ink: #E2EADF;
+  --ink-2: #A8B6AA;
+  --rule: #2C382F;
+  --rule-strong: #64786A;
+  --accent: #FF8A7A;
+  --accent-ink: #1A0E0C;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: inherit; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 80px);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: var(--ink);
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid-major) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; }
+p { margin: 0; }
+a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+code { font-family: var(--mono); font-size: 0.8em; }
+button { font: inherit; color: inherit; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.skip {
+  position: absolute; left: 12px; top: -80px; z-index: 100;
+  background: var(--ink); color: var(--paper); padding: 10px 14px; border-radius: 8px;
+  text-decoration: none; font-weight: 600;
+}
+.skip:focus { top: calc(env(safe-area-inset-top, 0px) + 12px); color: var(--paper); }
+
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: clamp(18px, 4vw, 40px); padding-right: clamp(18px, 4vw, 40px); }
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 20;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
+@supports (background: color-mix(in srgb, red 50%, transparent)) {
+  .site-header {
+    background: color-mix(in srgb, var(--paper) 90%, transparent);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+}
+.header-inner { display: flex; align-items: center; gap: 22px; min-height: 64px; }
+.brand {
+  margin-right: auto;
+  font-weight: 800; font-stretch: 118%; font-size: 1.125rem; letter-spacing: -0.005em;
+  text-decoration: none; color: var(--ink);
+}
+.site-nav { display: flex; gap: 20px; }
+.site-nav a { color: var(--ink-2); text-decoration: none; font-size: 0.9375rem; font-weight: 550; padding: 10px 0; }
+.site-nav a:hover { color: var(--ink); text-decoration: underline; }
+.theme-btn {
+  min-height: 40px; padding: 0 14px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--rule-strong); background: transparent; font-size: 0.875rem; font-weight: 600;
+}
+.theme-btn:hover { border-color: var(--ink); }
+@media (max-width: 760px) {
+  .hide-sm { display: none; }
+  .header-inner { gap: 14px; }
+}
+
+/* Shared */
+.section { padding: clamp(48px, 6vw, 84px) 0; }
+.section-title {
+  margin: 0;
+  font-size: clamp(1.75rem, 3.2vw, 2.4rem); font-weight: 760; font-stretch: 112%;
+  line-height: 1.08; letter-spacing: -0.012em;
+}
+.section-lead { margin-top: 14px; max-width: 62ch; color: var(--ink-2); font-size: 1.125rem; }
+h3 { margin: 0; font-size: 1.25rem; font-weight: 700; font-stretch: 106%; line-height: 1.25; }
+h4 { margin: 0; font-size: 1rem; font-weight: 700; line-height: 1.3; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 46px; padding: 0 20px; border-radius: 999px; cursor: pointer;
+  font-weight: 650; font-size: 1rem; text-decoration: none; line-height: 1.1;
+  border: 1.5px solid var(--ink);
+}
+.btn-primary { background: var(--ink); color: var(--paper); }
+.btn-primary:hover { color: var(--paper); background: var(--accent); border-color: var(--accent); }
+.btn-secondary { background: transparent; color: var(--ink); }
+.btn-secondary:hover { color: var(--ink); background: var(--surface); }
+.chip-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 40px; padding: 6px 14px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--rule-strong); background: transparent;
+  font-size: 0.875rem; font-weight: 600; line-height: 1.2; text-align: left;
+}
+.chip-btn:hover { border-color: var(--ink); }
+.chip-btn[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+@media (pointer: coarse) { .chip-btn { min-height: 44px; } }
+.stack { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 0; padding: 0; list-style: none; }
+.stack li {
+  font-size: 0.8125rem; font-weight: 600; padding: 3px 10px; border-radius: 999px;
+  background: var(--surface-2); color: var(--ink);
+}
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius-lg); }
+.demo-status { margin-top: 12px; font-size: 0.9375rem; color: var(--ink-2); min-height: 1.5em; }
+
+/* Status markers: survey-style symbols */
+.marker {
+  --m: var(--ink); --mb: var(--accent);
+  flex: none; display: inline-block; position: relative;
+  width: 16px; height: 16px; border-radius: 50%; border: 2px solid var(--m);
+}
+.marker.small { width: 12px; height: 12px; }
+.marker.shipped { background: var(--m); }
+.marker.progress { background: linear-gradient(90deg, var(--m) 50%, transparent 50%); }
+.marker.blocked { border-color: var(--mb); }
+.marker.blocked::before, .marker.blocked::after {
+  content: ""; position: absolute; left: 50%; top: 50%;
+  width: 70%; height: 2px; background: var(--mb);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.marker.blocked::after { transform: translate(-50%, -50%) rotate(-45deg); }
+.chip-btn[aria-pressed="true"] .marker { --m: var(--surface); --mb: var(--surface); }
+
+/* Hero */
+.hero { padding: clamp(40px, 7vw, 88px) 0 clamp(8px, 2vw, 24px); }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(36px, 5vw, 64px); align-items: start; }
+@media (min-width: 1000px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); }
+  .hero-copy { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 104px); }
+}
+.hero-title {
+  margin: 0;
+  font-size: clamp(2.35rem, 5vw, 3.6rem); font-weight: 800; font-stretch: 112%;
+  line-height: 1.02; letter-spacing: -0.018em; max-width: 14ch;
+}
+.hero-lead { margin-top: 24px; max-width: 46ch; font-size: 1.1875rem; line-height: 1.6; color: var(--ink-2); }
+.hero-lead + .hero-lead { margin-top: 14px; color: var(--ink); font-weight: 600; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+/* Field log: the one loud element */
+.log { background: var(--surface); border: 2px solid var(--ink); border-radius: var(--radius-lg); overflow: hidden; }
+.log-head { padding: 22px 22px 18px; border-bottom: 1px solid var(--rule); }
+.log-title { margin: 0; font-size: 1.5rem; font-weight: 780; font-stretch: 114%; line-height: 1.1; }
+.log-sub { margin-top: 6px; color: var(--ink-2); font-size: 0.96875rem; max-width: 52ch; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.count { font-variant-numeric: tabular-nums; font-weight: 500; }
+.log-list { list-style: none; margin: 0; padding: 0; }
+.log-item + .log-item { border-top: 1px solid var(--rule); }
+.log-item[hidden] { display: none; }
+.log-item summary {
+  list-style: none; cursor: pointer;
+  display: grid; grid-template-columns: 18px minmax(0, 1fr) auto 12px;
+  column-gap: 14px; row-gap: 2px; align-items: center;
+  padding: 14px 22px;
+}
+.log-item summary::-webkit-details-marker { display: none; }
+.log-item summary:hover .item-title { text-decoration: underline; text-underline-offset: 3px; }
+.log-item summary .marker { grid-column: 1; grid-row: 1 / span 2; justify-self: center; }
+.item-title { grid-column: 2; grid-row: 1; font-weight: 650; line-height: 1.3; }
+.item-team { grid-column: 2; grid-row: 2; font-size: 0.875rem; color: var(--ink-2); }
+.item-status { grid-column: 3; grid-row: 1 / span 2; font-size: 0.875rem; color: var(--ink-2); white-space: nowrap; }
+.chev {
+  grid-column: 4; grid-row: 1 / span 2; justify-self: center;
+  width: 9px; height: 9px; margin-top: -4px;
+  border-right: 2px solid var(--ink-2); border-bottom: 2px solid var(--ink-2);
+  transform: rotate(45deg); transition: transform .2s ease;
+}
+details[open] .chev { transform: rotate(-135deg); margin-top: 4px; }
+.item-body { padding: 0 22px 18px 54px; color: var(--ink-2); font-size: 0.96875rem; }
+.item-body p + p { margin-top: 8px; }
+.item-body .stack { margin-top: 10px; }
+.log-foot { padding: 12px 22px 14px; border-top: 1px solid var(--rule); font-size: 0.875rem; color: var(--ink-2); }
+@media (max-width: 560px) {
+  .log-head { padding: 18px 16px 16px; }
+  .log-item summary { grid-template-columns: 18px minmax(0, 1fr) 12px; padding: 14px 16px; }
+  .item-status { grid-column: 2; grid-row: 3; }
+  .chev { grid-column: 3; grid-row: 1 / span 3; }
+  .log-item summary .marker { grid-row: 1 / span 3; align-self: start; margin-top: 3px; }
+  .item-body { padding: 0 16px 16px 48px; }
+  .log-foot { padding: 12px 16px 14px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .js .log-item summary .marker {
+    transform: scale(0);
+    transition: transform .38s cubic-bezier(.2, .9, .3, 1.35);
+    transition-delay: calc(var(--i, 0) * 70ms + 200ms);
+  }
+  .js .log.plotted .log-item summary .marker { transform: scale(1); }
+}
+
+/* How I work */
+.principles { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; margin-top: 36px; }
+@media (min-width: 820px) { .principles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 44px; } }
+.principle { border-top: 2px solid var(--ink); padding-top: 16px; }
+.principle p { margin-top: 10px; color: var(--ink-2); }
+
+/* Case study */
+.case-top { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px 56px; margin-top: 28px; }
+@media (min-width: 900px) { .case-top { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); } }
+.case-top .section-lead { margin-top: 0; }
+.facts { margin: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 10px 20px; }
+.facts dt { font-weight: 650; }
+.facts dd { margin: 0; color: var(--ink-2); }
+@media (max-width: 480px) {
+  .facts { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .facts dd { margin-bottom: 10px; }
+}
+.flow-panel { margin-top: 36px; padding: clamp(18px, 3vw, 28px); }
+.flow-intro { color: var(--ink-2); font-size: 0.96875rem; }
+.flow {
+  margin-top: 18px; display: grid; align-items: center;
+  grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr) 30px minmax(0, 1fr) 30px minmax(0, 1fr);
+}
+.flow-col { display: grid; gap: 12px; }
+.node {
+  display: block; width: 100%; min-height: 66px; padding: 12px 14px; cursor: pointer;
+  text-align: left; line-height: 1.25; font-size: 0.96875rem; font-weight: 650;
+  border-radius: var(--radius-md); border: 1.5px solid var(--rule-strong);
+  background: var(--paper);
+}
+.node small { display: block; margin-top: 4px; font-size: 0.8125rem; font-weight: 500; color: var(--ink-2); }
+.node:hover { border-color: var(--ink); }
+.node[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); }
+.arrow { position: relative; height: 2px; margin: 0 4px; background: var(--rule-strong); }
+.arrow::after {
+  content: ""; position: absolute; right: 0; top: 50%;
+  width: 8px; height: 8px; border-top: 2px solid var(--rule-strong); border-right: 2px solid var(--rule-strong);
+  transform: translateY(-50%) rotate(45deg);
+}
+.node-detail { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--rule); min-height: 84px; }
+.node-detail p { margin-top: 6px; color: var(--ink-2); max-width: 70ch; }
+@media (max-width: 759px) {
+  .flow { grid-template-columns: minmax(0, 1fr); }
+  .flow-col.pair { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .arrow { width: 2px; height: 28px; margin: 6px auto; }
+  .arrow::after { right: auto; top: auto; left: 50%; bottom: 0; transform: translateX(-50%) rotate(135deg); }
+}
+
+/* Projects */
+.project { border-top: 2px solid var(--ink); padding-top: 28px; margin-top: 44px; }
+.project-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 24px; }
+.project-title { font-size: clamp(1.375rem, 2.4vw, 1.75rem); font-weight: 760; font-stretch: 110%; }
+.project-meta { color: var(--ink-2); font-size: 0.9375rem; }
+.project-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px 48px; margin-top: 18px; }
+@media (min-width: 960px) { .project-body.split { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); } }
+.project-text p { color: var(--ink-2); max-width: 60ch; }
+.project-text p + p { margin-top: 12px; }
+.demo { padding: clamp(16px, 2.5vw, 22px); }
+.demo-intro { font-size: 0.9375rem; color: var(--ink-2); }
+.qset { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+
+.track { list-style: none; margin: 16px 0 0; padding: 0; position: relative; }
+.track::before {
+  content: ""; position: absolute; left: 9px; top: 14px; bottom: 14px; width: 2px; background: var(--rule-strong);
+}
+.step { position: relative; display: grid; grid-template-columns: 20px minmax(0, 1fr); gap: 14px; padding: 7px 0; }
+.dot {
+  position: relative; z-index: 1; width: 20px; height: 20px; margin-top: 1px; border-radius: 50%;
+  border: 2px solid var(--rule-strong); background: var(--surface);
+  transition: background-color .2s ease, border-color .2s ease;
+}
+.step.visited .dot { background: var(--ink); border-color: var(--ink); }
+.step.current .dot { background: var(--accent); border-color: var(--accent); }
+.step.skipped .dot { background: var(--surface); border-style: dashed; }
+.step-name { font-weight: 650; line-height: 1.35; }
+.step-name code { margin-left: 6px; color: var(--ink-2); font-weight: 400; }
+.step.skipped .step-name { color: var(--ink-2); text-decoration: line-through; text-decoration-thickness: 1px; }
+.step-trace { font-size: 0.9rem; color: var(--ink-2); }
+.step-trace:empty { display: none; }
+
+.hl-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+@media (min-width: 960px) { .hl-grid { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); } }
+.jd-label { display: block; margin-top: 16px; font-weight: 650; }
+.jd textarea {
+  display: block; width: 100%; min-height: 200px; margin-top: 8px; padding: 12px; resize: vertical;
+  font: inherit; font-size: 0.9375rem; line-height: 1.5; color: var(--ink);
+  background: var(--paper); border: 1.5px solid var(--rule-strong); border-radius: var(--radius-md);
+}
+.jd textarea:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
+.jd .btn { margin-top: 14px; }
+.resume-title { margin-bottom: 10px; }
+.lines { list-style: none; margin: 0; padding: 0; }
+.line {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 14px; row-gap: 2px;
+  align-items: baseline; padding: 7px 10px; border-radius: var(--radius-sm);
+  font-size: 0.9375rem; line-height: 1.45;
+  transition: background-color .25s ease;
+}
+.line + .line { margin-top: 2px; }
+.tier { font-size: 0.78rem; font-weight: 700; white-space: nowrap; }
+.why { grid-column: 1 / -1; font-size: 0.8125rem; }
+.tier:empty, .why:empty { display: none; }
+.line.t1 { background: var(--hl-1); color: var(--hl-ink); }
+.line.t2 { background: var(--hl-2); color: var(--hl-ink); }
+.line.t3 { background: var(--hl-3); color: var(--hl-ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 14px; font-size: 0.875rem; color: var(--ink-2); }
+.swatch { display: inline-block; width: 14px; height: 14px; margin-right: 6px; border-radius: 3px; vertical-align: -2px; }
+.swatch.t1 { background: var(--hl-1); }
+.swatch.t2 { background: var(--hl-2); }
+.swatch.t3 { background: var(--hl-3); box-shadow: inset 0 0 0 1px var(--rule-strong); }
+
+.steps { list-style: none; counter-reset: step; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
+@media (min-width: 820px) { .steps { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; } }
+.steps li { counter-increment: step; border-top: 1px solid var(--rule-strong); padding-top: 12px; }
+.steps li::before {
+  content: counter(step); display: block; margin-bottom: 6px;
+  font-size: 1.5rem; font-weight: 800; font-stretch: 120%; line-height: 1; color: var(--accent);
+}
+.steps p { margin-top: 6px; color: var(--ink-2); font-size: 0.96875rem; }
+
+/* Background */
+.bg-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 36px; margin-top: 32px; }
+@media (min-width: 900px) { .bg-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 44px; } }
+.bg-col { border-top: 2px solid var(--ink); padding-top: 16px; }
+.role { margin-top: 4px; color: var(--ink-2); font-size: 0.9375rem; }
+.bg-col ul { margin: 14px 0 0; padding-left: 1.1em; color: var(--ink-2); }
+.bg-col li + li { margin-top: 8px; }
+
+/* Contact */
+.contact-box { margin-top: 28px; padding: clamp(22px, 4vw, 40px); display: grid; gap: 18px; }
+.email-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+.email-link {
+  font-size: clamp(1.25rem, 3.4vw, 2.25rem); font-weight: 760; font-stretch: 108%;
+  text-decoration-thickness: 2px; text-underline-offset: 6px; overflow-wrap: anywhere;
+}
+.copy-status { font-size: 0.9375rem; color: var(--ink-2); }
+.copy-status:empty { display: none; }
+.phone { color: var(--ink-2); }
+.site-footer { padding: 28px 0 48px; color: var(--ink-2); font-size: 0.875rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+/* ---------- Additions for this version ---------- */
+[hidden] { display: none !important; }
+
+.site-nav a.nav-cv { color: var(--ink); font-weight: 650; }
+@media (max-width: 480px) { .hide-xs { display: none; } }
+.brand, .theme-btn { white-space: nowrap; }
+@media (max-width: 400px) { .brand { font-size: 1rem; font-stretch: 108%; } .theme-btn { padding: 0 12px; } }
+
+/* Hero badge with photo */
+.badge { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+.badge img {
+  flex: none; width: 92px; height: 115px; object-fit: cover; object-position: 50% 30%;
+  border-radius: 12px; border: 1.5px solid var(--ink); background: var(--surface-2);
+}
+.badge-name { margin: 0; font-size: 1.375rem; font-weight: 800; font-stretch: 116%; line-height: 1.1; }
+.badge-meta { margin-top: 6px; color: var(--ink-2); font-size: 0.9375rem; line-height: 1.45; }
+
+/* Role filter */
+.lens { margin-top: 28px; }
+.lens-label { font-weight: 650; font-size: 0.96875rem; }
+.lens .qset { margin-top: 10px; }
+
+/* Field log rows: team and role tags under the title */
+.log-item summary { grid-template-columns: 18px minmax(0, 1fr) 12px; }
+.item-meta {
+  grid-column: 2; grid-row: 2;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px;
+  font-size: 0.875rem; color: var(--ink-2);
+}
+.chev { grid-column: 3; grid-row: 1 / span 2; }
+.tag {
+  font-size: 0.75rem; font-weight: 650; line-height: 1.55; padding: 0 8px;
+  border-radius: 999px; border: 1px solid var(--rule-strong); color: var(--ink);
+}
+.item-body .label { font-weight: 650; color: var(--ink); }
+.item-body ul.stack { margin-top: 10px; }
+@media (max-width: 560px) {
+  .log-item summary { grid-template-columns: 18px minmax(0, 1fr) 12px; }
+  .chev { grid-column: 3; grid-row: 1 / span 2; }
+  .log-item summary .marker { grid-row: 1 / span 2; }
+}
+
+/* Projects filtered by role */
+.lens-note {
+  margin-top: 22px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px;
+  padding: 12px 16px; border: 1px dashed var(--rule-strong); border-radius: var(--radius-md);
+  color: var(--ink-2); font-size: 0.9375rem;
+}
+.link-btn {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font-weight: 650; color: var(--ink); text-decoration: underline; text-underline-offset: 3px;
+}
+.link-btn:hover { color: var(--accent); }
+.points { margin: 12px 0 0; padding-left: 1.1em; color: var(--ink-2); }
+.points li + li { margin-top: 6px; }
+
+/* Background: four blocks */
+@media (min-width: 900px) { .bg-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px 56px; } }
+
+/* Contact */
+.contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">Sandeep Mourya</a>
+    <nav class="site-nav" aria-label="Sections">
+      <a class="hide-sm" href="#field-log">Field log</a>
+      <a class="hide-sm" href="#case-study">Case study</a>
+      <a class="hide-sm" href="#projects">Projects</a>
+      <a class="hide-sm" href="#background">Background</a>
+      <a class="hide-xs" href="#contact">Contact</a>
+      <a class="nav-cv" data-cv href="assets/Sandeep_CV.pdf" download="Sandeep_CV.pdf">CV</a>
+    </nav>
+    <button class="theme-btn" id="theme-toggle" type="button">Dark theme</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero + field log -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="badge">
+          <img src="assets/sandeep.jpg" alt="Portrait of Sandeep Mourya" width="92" height="115">
+          <div>
+            <p class="badge-name">Sandeep Mourya</p>
+            <p class="badge-meta">IIT Delhi graduate<br>Basic Home Loan, since June 2026</p>
+          </div>
+        </div>
+        <h1 class="hero-title">I find the problem in the data and build the fix.</h1>
+        <p class="hero-lead">At Basic Home Loan I work with the sales, payout, support, marketing and franchise teams. I dig into how the business runs, find where it breaks, and ship the fix: in-app modules, payout reconciliation, CRM journeys and automations.</p>
+        <div class="lens">
+          <p class="lens-label" id="lens-label">Show the work that fits your role</p>
+          <div class="qset" role="group" aria-labelledby="lens-label">
+            <button class="chip-btn" type="button" data-lens="all" aria-pressed="true">Everything</button>
+            <button class="chip-btn" type="button" data-lens="product" aria-pressed="false">Product</button>
+            <button class="chip-btn" type="button" data-lens="data" aria-pressed="false">Data</button>
+            <button class="chip-btn" type="button" data-lens="engineering" aria-pressed="false">Engineering</button>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:iitdelhisandeep@gmail.com">Email me</a>
+          <a class="btn btn-secondary" data-cv href="assets/Sandeep_CV.pdf" download="Sandeep_CV.pdf">Download CV</a>
+        </div>
+      </div>
+
+      <div class="log" id="field-log">
+        <div class="log-head">
+          <h2 class="log-title">Field log</h2>
+          <p class="log-sub">Six things I've shipped at Basic Home Loan since June 2026, all live. Open one to see the problem and the fix.</p>
+        </div>
+
+        <ul class="log-list">
+          <li class="log-item" data-roles="product data engineering">
+            <details>
+              <summary>
+                <span class="marker shipped" aria-hidden="true"></span>
+                <span class="item-title">Field-check app for franchises</span>
+                <span class="item-meta"><span>Franchise team</span><span class="tag">Product</span><span class="tag">Data</span><span class="tag">Engineering</span></span>
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+              <div class="item-body">
+                <p><span class="label">Problem:</span> the franchise team was struggling to keep partners engaged.</p>
+                <p><span class="label">Fix:</span> I built one web app for visiting RMs and franchise partners. RMs log each visit and the franchise's business, partners raise issues in the app, and the franchise team gets analytics across all franchises. <a href="#case-study">Read the case study</a></p>
+                <ul class="stack"><li>Vercel</li><li>Supabase</li><li>Postgres</li></ul>
+              </div>
+            </details>
+          </li>
+          <li class="log-item" data-roles="product data engineering">
+            <details>
+              <summary>
+                <span class="marker shipped" aria-hidden="true"></span>
+                <span class="item-title">Agent Flash for new and orphaned agents</span>
+                <span class="item-meta"><span>RMs and agent network</span><span class="tag">Product</span><span class="tag">Data</span><span class="tag">Engineering</span></span>
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+              <div class="item-body">
+                <p><span class="label">Problem:</span> when an RM left the company, their agents were orphaned and had to be reassigned by hand. New agents waited on manual assignment too.</p>
+                <p><span class="label">Fix:</span> we built Agent Flash into the BASIC app. New and orphaned agents land in a shared flash, and RMs pick them up based on location, profession and team. When an agent's listing expires, the module sends them a WhatsApp message asking whether they still want to do business with BASIC. I also tracked the module's first month of analytics.</p>
+                <ul class="stack"><li>BASIC app</li><li>WhatsApp Business</li></ul>
+              </div>
+            </details>
+          </li>
+          <li class="log-item" data-roles="product engineering">
+            <details>
+              <summary>
+                <span class="marker shipped" aria-hidden="true"></span>
+                <span class="item-title">Lead Flash for alliance leads</span>
+                <span class="item-meta"><span>RMs and alliances</span><span class="tag">Product</span><span class="tag">Engineering</span></span>
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+              <div class="item-body">
+                <p><span class="label">Problem:</span> new leads from the Builder Alliance and Strategic Alliance channels needed to reach an RM.</p>
+                <p><span class="label">Fix:</span> the Agent Flash pattern, applied to leads. New leads from both channels are flashed in Lead Flash, and RMs pick them up and take them through to completion.</p>
+                <ul class="stack"><li>BASIC app</li></ul>
+              </div>
+            </details>
+          </li>
+          <li class="log-item" data-roles="data product">
+            <details>
+              <summary>
+                <span class="marker shipped" aria-hidden="true"></span>
+                <span class="item-title">Unclaimed payouts: from analysis to module</span>
+                <span class="item-meta"><span>Bank MIS team and RMs</span><span class="tag">Product</span><span class="tag">Data</span></span>
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+              <div class="item-body">
+                <p><span class="label">Problem:</span> I analysed the business data and found mismatches between payments received from banks and payouts made to agents, leaving cases in suspense or unclaimed.</p>
+                <p><span class="label">Fix:</span> we built a separate module for these cases. RMs search for their cases and claim them, the Bank MIS team verifies each claim, the case is assigned to the RM, and the RM can track its status.</p>
+                <ul class="stack"><li>Payout reconciliation</li><li>BASIC app</li></ul>
+              </div>
+            </details>
+          </li>
+          <li class="log-item" data-roles="data engineering product">
+            <details>
+              <summary>
+                <span class="marker shipped" aria-hidden="true"></span>
+                <span class="item-title">CleverTap reactivation journey</span>
+                <span class="item-meta"><span>Marketing and agent network</span><span class="tag">Product</span><span class="tag">Data</span><span class="tag">Engineering</span></span>
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+              <div class="item-body">
+                <p><span class="label">Problem:</span> agents who hadn't sent a lead in the past 30 days, or had gone inactive, needed a way back in.</p>
+                <p><span class="label">Fix:</span> we built a reactivation journey in CleverTap. An n8n workflow fetches live data from the BASIC console, and those agents get a campaign offering an extra payout for reactivating.</p>
+                <ul class="stack"><li>CleverTap</li><li>n8n</li></ul>
+              </div>
+            </details>
+          </li>
+          <li class="log-item" data-roles="engineering product">
+            <details>
+              <summary>
+                <span class="marker shipped" aria-hidden="true"></span>
+                <span class="item-title">Zoho Desk assignment and escalation</span>
+                <span class="item-meta"><span>Support</span><span class="tag">Product</span><span class="tag">Engineering</span></span>
+                <span class="chev" aria-hidden="true"></span>
+              </summary>
+              <div class="item-body">
+                <p><span class="label">Problem:</span> tickets needed to reach the right owner, and unanswered tickets could sit unnoticed.</p>
+                <p><span class="label">Fix:</span> I set up multiple ticket-assignment rules, plus an escalation that moves any ticket left without a response for 7 days up the hierarchy.</p>
+                <ul class="stack"><li>Zoho Desk</li></ul>
+              </div>
+            </details>
+          </li>
+        </ul>
+        <p class="log-foot" id="log-status" aria-live="polite">Showing all 6 items.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How I work -->
+  <section class="section" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 class="section-title" id="how-title">How I work</h2>
+      <div class="principles">
+        <div class="principle">
+          <h3>Start from the data</h3>
+          <p>The unclaimed-payout module began as an analysis. Matching bank receipts against agent payouts showed which cases were stuck in suspense.</p>
+        </div>
+        <div class="principle">
+          <h3>Replace the manual step</h3>
+          <p>Orphaned agents used to be reassigned by hand whenever an RM left. Agent Flash turned that into a queue RMs pick from by location, profession and team.</p>
+        </div>
+        <div class="principle">
+          <h3>Let the system follow up</h3>
+          <p>A ticket with no response for 7 days escalates on its own, and an agent whose listing expires gets a WhatsApp check-in without anyone sending it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case study -->
+  <section class="section" id="case-study" aria-labelledby="case-title">
+    <div class="wrap">
+      <h2 class="section-title" id="case-title">Case study: the field-check app</h2>
+      <div class="case-top">
+        <p class="section-lead">The franchise team was struggling to keep partners engaged. I built one web app for the two groups in the field: the relationship managers who visit franchises, and the franchise partners themselves. Every visit, every franchise's business and every issue now lands in one database.</p>
+        <dl class="facts">
+          <dt>Used by</dt><dd>Visiting RMs and franchise partners</dd>
+          <dt>Records</dt><dd>Visits, each franchise's business, and issues partners raise</dd>
+          <dt>Enables</dt><dd>Analytics across all franchises, and one place to follow up on issues</dd>
+          <dt>Stack</dt><dd>Web app deployed on Vercel, data in Supabase (Postgres)</dd>
+        </dl>
+      </div>
+
+      <div class="panel flow-panel">
+        <p class="flow-intro">Select a part of the diagram to see what it does.</p>
+        <div class="flow" role="group" aria-label="How the field-check app fits together">
+          <div class="flow-col pair">
+            <button class="node" type="button" data-node="rm" aria-pressed="true">Visiting RM<small>Logs visits</small></button>
+            <button class="node" type="button" data-node="partner" aria-pressed="false">Franchise partner<small>Raises issues</small></button>
+          </div>
+          <div class="arrow" aria-hidden="true"></div>
+          <div class="flow-col">
+            <button class="node" type="button" data-node="app" aria-pressed="false">Web app<small>Deployed on Vercel</small></button>
+          </div>
+          <div class="arrow" aria-hidden="true"></div>
+          <div class="flow-col">
+            <button class="node" type="button" data-node="db" aria-pressed="false">Database<small>Supabase, Postgres</small></button>
+          </div>
+          <div class="arrow" aria-hidden="true"></div>
+          <div class="flow-col pair">
+            <button class="node" type="button" data-node="analytics" aria-pressed="false">Analytics<small>All franchises</small></button>
+            <button class="node" type="button" data-node="issues" aria-pressed="false">Issue follow-up<small>Franchise team</small></button>
+          </div>
+        </div>
+        <div class="node-detail" aria-live="polite">
+          <h3 id="node-title">Visiting RM</h3>
+          <p id="node-text">Logs each franchise visit and the franchise's business in the app, so every field check is on record.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <h2 class="section-title" id="projects-title">Projects</h2>
+      <p class="lens-note" id="projects-note" hidden><span id="projects-note-text"></span><button class="link-btn" type="button" data-lens-reset>Show all projects</button></p>
+
+      <!-- RAG agent -->
+      <article class="project" data-roles="data engineering" aria-labelledby="p1-title">
+        <div class="project-head">
+          <h3 class="project-title" id="p1-title">RAG agent with web search and memory</h3>
+          <p class="project-meta">July to August 2025</p>
+        </div>
+        <div class="project-body split">
+          <div class="project-text">
+            <p>A chatbot built as a LangGraph state graph. A Pydantic-typed router decides how to handle each question, a judging step checks the evidence before answering, and Tavily web search takes over when the indexed documents fall short.</p>
+            <p>MemorySaver checkpoints give every conversation thread durable memory, so follow-ups build on what was already said.</p>
+            <ul class="stack"><li>LangGraph</li><li>Chroma</li><li>Tavily</li><li>Pydantic</li><li>Python</li></ul>
+          </div>
+          <div class="panel demo">
+            <h4>Step through a question</h4>
+            <p class="demo-intro">An illustrative walkthrough of the graph's routing. No model runs here.</p>
+            <div class="qset" role="group" aria-label="Sample questions">
+              <button class="chip-btn qbtn" type="button" data-q="docs" aria-pressed="false">Summarise section 2 of my notes</button>
+              <button class="chip-btn qbtn" type="button" data-q="fresh" aria-pressed="false">What changed in the latest LangGraph release?</button>
+              <button class="chip-btn qbtn" type="button" data-q="followup" aria-pressed="false">Make that shorter</button>
+            </div>
+            <ol class="track">
+              <li class="step" data-step="memory"><span class="dot" aria-hidden="true"></span><div><div class="step-name">Load thread memory<code>MemorySaver</code></div><div class="step-trace"></div></div></li>
+              <li class="step" data-step="route"><span class="dot" aria-hidden="true"></span><div><div class="step-name">Route the question<code>Pydantic router</code></div><div class="step-trace"></div></div></li>
+              <li class="step" data-step="retrieve"><span class="dot" aria-hidden="true"></span><div><div class="step-name">Search indexed documents<code>Chroma</code></div><div class="step-trace"></div></div></li>
+              <li class="step" data-step="judge"><span class="dot" aria-hidden="true"></span><div><div class="step-name">Judge the evidence<code>judge node</code></div><div class="step-trace"></div></div></li>
+              <li class="step" data-step="web"><span class="dot" aria-hidden="true"></span><div><div class="step-name">Search the web<code>Tavily</code></div><div class="step-trace"></div></div></li>
+              <li class="step" data-step="answer"><span class="dot" aria-hidden="true"></span><div><div class="step-name">Write the answer<code>LLM</code></div><div class="step-trace"></div></div></li>
+              <li class="step" data-step="save"><span class="dot" aria-hidden="true"></span><div><div class="step-name">Save checkpoint<code>MemorySaver</code></div><div class="step-trace"></div></div></li>
+            </ol>
+            <p class="demo-status" id="rag-status" aria-live="polite">Pick a question to see the route it takes.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Resume highlighter -->
+      <article class="project" data-roles="product data engineering" aria-labelledby="p2-title">
+        <div class="project-head">
+          <h3 class="project-title" id="p2-title">Resume highlighter, Eightfold AI Innov8 Challenge</h3>
+          <p class="project-meta">October to November 2024</p>
+        </div>
+        <div class="project-body">
+          <div class="project-text">
+            <p>Recruiters skim. This pipeline parses a resume PDF, derives keyword vectors with Gemma 2B-IT through prompt chaining, scores every line by cosine similarity and highlights the top lines in three colour tiers with PyMuPDF, so the relevant lines are the first thing a recruiter sees.</p>
+            <ul class="stack"><li>Gemma 2B-IT</li><li>Hugging Face</li><li>PyMuPDF</li><li>Python</li></ul>
+          </div>
+          <div class="panel demo">
+            <h4>Try it on my resume</h4>
+            <p class="demo-intro">This in-browser version swaps Gemma for TF-IDF so it runs instantly. Pick a role, or paste your own job description.</p>
+            <div class="hl-grid">
+              <div class="jd">
+                <div class="qset" role="group" aria-label="Sample roles">
+                  <button class="chip-btn preset" type="button" data-preset="pm" aria-pressed="true">Product manager</button>
+                  <button class="chip-btn preset" type="button" data-preset="da" aria-pressed="false">Data analyst</button>
+                  <button class="chip-btn preset" type="button" data-preset="ds" aria-pressed="false">Data scientist</button>
+                  <button class="chip-btn preset" type="button" data-preset="ai" aria-pressed="false">AI engineer</button>
+                </div>
+                <label class="jd-label" for="jd">Job description</label>
+                <textarea id="jd" rows="9" spellcheck="false"></textarea>
+                <button class="btn btn-primary" id="run-hl" type="button">Highlight my resume</button>
+                <p class="demo-status" id="hl-status" aria-live="polite"></p>
+              </div>
+              <div class="resume">
+                <h4 class="resume-title">My resume, line by line</h4>
+                <ul class="lines">
+                  <li class="line"><span class="text">Co-built Agent Flash, a product module that matches new and orphaned agents to RMs by location, profession and team.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Automated WhatsApp re-engagement messages for agents whose listings expire.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Applied the same module design to Lead Flash for Builder Alliance and Strategic Alliance leads.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Analysed bank receipts against agent payouts to find mismatches in the payout data.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Co-built an unclaimed-payout module where RMs claim cases and Bank MIS verifies them.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Built a CleverTap reactivation journey fed by an n8n workflow on live console data.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Targeted agents with no leads in 30 days with an extra-payout reactivation campaign.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Built a Vercel and Supabase field-check app for RMs and franchise partners.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Set up Zoho Desk assignment rules and a 7-day escalation for unanswered tickets.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Built LLM agent workflows in LangChain to automate email distribution and data management.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Built a Python ETL pipeline that scrapes vendor data and feeds KPI dashboards in Plotly Dash.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Segmented customers with K-Means clustering to surface retention and churn patterns.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Designed a LangGraph chatbot with a typed router and a judging step against hallucination.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Combined Chroma vector retrieval with a Tavily web-search fallback and session memory.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Ranked resume lines by cosine similarity against Gemma 2B-IT keyword vectors.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Engineered time-series features and ensembled LightGBM with HMM outputs, calibrated with isotonic regression.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Explained model predictions with SHAP to inform coaching decisions.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Modelled 149k+ Spotify streaming records in Power BI with KPIs and year-over-year analysis.</span><span class="tier"></span><span class="why"></span></li>
+                  <li class="line"><span class="text">Directed 5 activity heads to run 50+ events over 4 days at TRYST'25.</span><span class="tier"></span><span class="why"></span></li>
+                </ul>
+                <div class="legend" aria-hidden="true">
+                  <span><span class="swatch t1"></span>Strong match</span>
+                  <span><span class="swatch t2"></span>Good match</span>
+                  <span><span class="swatch t3"></span>Partial match</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Amex -->
+      <article class="project" data-roles="data" aria-labelledby="p3-title">
+        <div class="project-head">
+          <h3 class="project-title" id="p3-title">American Express Decision Science Challenge</h3>
+          <p class="project-meta">June to July 2024</p>
+        </div>
+        <div class="project-body">
+          <div class="project-text">
+            <p>Predicting player performance from time-series data, with explanations a coach could act on.</p>
+            <ul class="stack"><li>LightGBM</li><li>Hidden Markov models</li><li>SHAP</li><li>scikit-learn</li></ul>
+          </div>
+        </div>
+        <ol class="steps">
+          <li><h4>Features</h4><p>Rolling statistics, HMM state probabilities and player embeddings built from the time series.</p></li>
+          <li><h4>Model</h4><p>LightGBM ensembled with HMM outputs, trained with stratified cross-validation.</p></li>
+          <li><h4>Calibration</h4><p>Isotonic calibration so predicted probabilities can be taken at face value.</p></li>
+          <li><h4>Explanation</h4><p>SHAP surfaced recent form, positional metrics and injury history as key drivers for coaching decisions.</p></li>
+        </ol>
+      </article>
+
+      <!-- Spotify -->
+      <article class="project" data-roles="data" aria-labelledby="p4-title">
+        <div class="project-head">
+          <h3 class="project-title" id="p4-title">Spotify streaming analytics dashboard</h3>
+          <p class="project-meta">May to June 2024</p>
+        </div>
+        <div class="project-body">
+          <div class="project-text">
+            <p>An end-to-end Power BI dashboard over 149k+ streaming records, built to uncover how people's listening patterns change over time.</p>
+            <ul class="points">
+              <li>Cleaned the data, then modelled it with a calendar table and relationships.</li>
+              <li>Added KPIs, year-over-year analysis and time intelligence.</li>
+              <li>Built filters, slicers, heatmaps and drill-through pages for exploration.</li>
+            </ul>
+            <ul class="stack"><li>Power BI</li><li>SQL</li><li>Data modelling</li></ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Background -->
+  <section class="section" id="background" aria-labelledby="bg-title">
+    <div class="wrap">
+      <h2 class="section-title" id="bg-title">Background</h2>
+      <div class="bg-grid">
+        <div class="bg-col">
+          <h3>Basic Home Loan</h3>
+          <p class="role">Automation &amp; Product Operations, June 2026 to now</p>
+          <ul>
+            <li>A home-loan platform. I work across the sales, payout, support, marketing and franchise teams.</li>
+            <li>Shipped Agent Flash, Lead Flash and an unclaimed-payout module with the team.</li>
+            <li>Reconciled bank receipts against agent payouts, and built CleverTap reactivation journeys on n8n.</li>
+            <li>Built the field-check app and set up Zoho Desk assignment and escalation rules.</li>
+          </ul>
+        </div>
+        <div class="bg-col">
+          <h3>Venwiz Technologies</h3>
+          <p class="role">Data Science Intern, remote, May to June 2024</p>
+          <ul>
+            <li>Built LLM agent workflows in LangChain to automate email distribution and data management.</li>
+            <li>Built a Python ETL pipeline that scrapes vendor data into KPI dashboards in Plotly Dash.</li>
+            <li>Shipped a Lovable and Supabase web app that automated portal data ingestion.</li>
+            <li>Segmented customers with K-Means to surface retention and churn patterns.</li>
+          </ul>
+        </div>
+        <div class="bg-col">
+          <h3>IIT Delhi</h3>
+          <p class="role">B.Tech, Civil Engineering, 2022 to 2026</p>
+          <ul>
+            <li>JEE Advanced 2022: All India Rank 852 among 2 lakh+ candidates. JEE Main 2022: All India Rank 2860 among 10 lakh+.</li>
+            <li>Winner, Creative Coders Hackathon, May 2025, with a transformer-based text-classification pipeline.</li>
+            <li>Research with Prof. Ravi Kumar Kunchala: aerosol optical depth across 16 Indian stations from AERONET and satellite data, with KNN imputation and correlation analysis.</li>
+            <li>Letter of recommendation from Prof. K. N. Jha for work on construction cost management.</li>
+          </ul>
+        </div>
+        <div class="bg-col">
+          <h3>Leading teams</h3>
+          <p class="role">Campus festivals and sport</p>
+          <ul>
+            <li>Production Coordinator, TRYST'25: directed 5 activity heads to run 50+ events over 4 days for 1 lakh+ attendees.</li>
+            <li>Core creative team, Rendezvous'25: 250+ posters and banners, 60% more social engagement and 40% more sign-ups.</li>
+            <li>Captain of the hockey team, elected unanimously by 450+ to lead a team of 11.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 class="section-title" id="contact-title">Contact</h2>
+      <div class="panel contact-box">
+        <p class="section-lead" style="margin-top:0">Open to product, data and engineering roles. Email is the fastest way to reach me.</p>
+        <div class="email-row">
+          <a class="email-link" href="mailto:iitdelhisandeep@gmail.com">iitdelhisandeep@gmail.com</a>
+          <button class="chip-btn" id="copy-email" type="button">Copy email</button>
+          <p class="copy-status" id="copy-status" aria-live="polite"></p>
+        </div>
+        <div class="contact-actions">
+          <p class="phone">Phone: <a href="tel:+918307073935">+91 83070 73935</a></p>
+          <a class="chip-btn" data-cv href="assets/Sandeep_CV.pdf" download="Sandeep_CV.pdf">Download CV (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">Sandeep Mourya. Updated October 2026.</div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function () {
+  'use strict';
+  var root = document.documentElement;
+  var reduceMotion = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  function all(sel, scope) { return Array.prototype.slice.call((scope || document).querySelectorAll(sel)); }
+  function hasRole(el, lens) {
+    return lens === 'all' || (' ' + (el.getAttribute('data-roles') || '') + ' ').indexOf(' ' + lens + ' ') !== -1;
+  }
+
+  /* ---------- Theme ---------- */
+  var themeBtn = document.getElementById('theme-toggle');
+  var THEME_KEY = 'sandeep-portfolio-theme';
+  function effectiveTheme() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark' || t === 'light') return t;
+    return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  }
+  function syncThemeButton() {
+    var dark = effectiveTheme() === 'dark';
+    themeBtn.textContent = dark ? 'Light theme' : 'Dark theme';
+    themeBtn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+  }
+  try {
+    var savedTheme = localStorage.getItem(THEME_KEY);
+    if (savedTheme === 'dark' || savedTheme === 'light') root.setAttribute('data-theme', savedTheme);
+  } catch (e) { /* storage unavailable: follow the viewer's setting */ }
+  syncThemeButton();
+  themeBtn.addEventListener('click', function () {
+    var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem(THEME_KEY, next); } catch (e) { /* ignore */ }
+    syncThemeButton();
+  });
+  if (window.matchMedia) {
+    var schemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    if (schemeQuery.addEventListener) schemeQuery.addEventListener('change', syncThemeButton);
+    else if (schemeQuery.addListener) schemeQuery.addListener(syncThemeButton);
+  }
+
+  /* ---------- Role filter (field log + projects) ---------- */
+  var LENS_NAMES = { all: 'everything', product: 'Product', data: 'Data', engineering: 'Engineering' };
+  var log = document.getElementById('field-log');
+  var logItems = all('.log-item', log);
+  var logStatus = document.getElementById('log-status');
+  var projects = all('.project');
+  var projectsNote = document.getElementById('projects-note');
+  var projectsNoteText = document.getElementById('projects-note-text');
+  var lensBtns = all('[data-lens]');
+  logItems.forEach(function (item, i) { item.style.setProperty('--i', i); });
+  function applyLens(lens, updateUrl) {
+    if (!LENS_NAMES.hasOwnProperty(lens)) lens = 'all';
+    lensBtns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-lens') === lens ? 'true' : 'false'); });
+    var shown = 0;
+    logItems.forEach(function (item) {
+      var match = hasRole(item, lens);
+      item.hidden = !match;
+      if (match) shown += 1;
+    });
+    logStatus.textContent = lens === 'all'
+      ? 'Showing all ' + logItems.length + ' items.'
+      : 'Showing ' + shown + ' of ' + logItems.length + ' items for ' + LENS_NAMES[lens] + ' roles.';
+    var pShown = 0;
+    projects.forEach(function (p) {
+      var match = hasRole(p, lens);
+      p.hidden = !match;
+      if (match) pShown += 1;
+    });
+    projectsNote.hidden = lens === 'all';
+    projectsNoteText.textContent = 'Showing ' + pShown + ' of ' + projects.length + ' projects for ' + LENS_NAMES[lens] + ' roles.';
+    if (updateUrl) {
+      try {
+        var url = new URL(window.location.href);
+        if (lens === 'all') url.searchParams.delete('role'); else url.searchParams.set('role', lens);
+        window.history.replaceState(null, '', url.toString());
+      } catch (e) { /* URL updates are optional */ }
+    }
+  }
+  lensBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () { applyLens(btn.getAttribute('data-lens'), true); });
+  });
+  all('[data-lens-reset]').forEach(function (btn) {
+    btn.addEventListener('click', function () { applyLens('all', true); });
+  });
+  var initialLens = 'all';
+  try { initialLens = new URLSearchParams(window.location.search).get('role') || 'all'; } catch (e) { /* ignore */ }
+  applyLens(initialLens, false);
+  requestAnimationFrame(function () { requestAnimationFrame(function () { log.classList.add('plotted'); }); });
+
+  /* ---------- Field-check app diagram ---------- */
+  var NODE_INFO = {
+    rm: ['Visiting RM', "Logs each franchise visit and the franchise's business in the app, so every field check is on record."],
+    partner: ['Franchise partner', 'Raises issues directly in the app, where the franchise team can see them.'],
+    app: ['Web app on Vercel', 'One app serves both RMs and partners, deployed on Vercel.'],
+    db: ['Supabase database', 'A Postgres database holds visits, business records and issues for every franchise.'],
+    analytics: ['Analytics', 'The franchise team sees visits and business across all franchises in one place.'],
+    issues: ['Issue follow-up', 'Issues raised by partners reach the franchise team for follow-up.']
+  };
+  var nodeBtns = all('.node');
+  var nodeTitle = document.getElementById('node-title');
+  var nodeText = document.getElementById('node-text');
+  nodeBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var key = btn.getAttribute('data-node');
+      nodeBtns.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+      nodeTitle.textContent = NODE_INFO[key][0];
+      nodeText.textContent = NODE_INFO[key][1];
+    });
+  });
+
+  /* ---------- RAG route walkthrough ---------- */
+  var ORDER = ['memory', 'route', 'retrieve', 'judge', 'web', 'answer', 'save'];
+  var ROUTES = {
+    docs: {
+      memory: 'Loaded this thread: 6 earlier messages.',
+      route: 'Router chose: search the documents.',
+      retrieve: 'Pulled the 4 closest chunks from Chroma.',
+      judge: 'Evidence covers the question. Continue.',
+      web: null,
+      answer: 'Answered from the retrieved chunks.',
+      save: 'Checkpoint saved for this thread.'
+    },
+    fresh: {
+      memory: 'Loaded this thread: nothing relevant yet.',
+      route: 'Router chose: search the documents.',
+      retrieve: 'Pulled 4 chunks, all older than the release in question.',
+      judge: 'Evidence is out of date for a question about the latest release. Fall back to the web.',
+      web: 'Tavily returned recent release notes.',
+      answer: 'Answered from the web results.',
+      save: 'Checkpoint saved for this thread.'
+    },
+    followup: {
+      memory: 'Loaded the previous answer from this thread.',
+      route: 'Router chose: reply from the conversation.',
+      retrieve: null,
+      judge: null,
+      web: null,
+      answer: 'Rewrote the previous answer in fewer words.',
+      save: 'Checkpoint saved for this thread.'
+    }
+  };
+  var stepEls = {};
+  all('.step').forEach(function (el) { stepEls[el.getAttribute('data-step')] = el; });
+  var qBtns = all('.qbtn');
+  var ragStatus = document.getElementById('rag-status');
+  var timers = [];
+  function resetSteps() {
+    timers.forEach(clearTimeout);
+    timers = [];
+    ORDER.forEach(function (k) {
+      stepEls[k].classList.remove('visited', 'current', 'skipped');
+      stepEls[k].querySelector('.step-trace').textContent = '';
+    });
+  }
+  function runRoute(key) {
+    resetSteps();
+    var route = ROUTES[key];
+    var ran = 0;
+    ragStatus.textContent = 'Running the question through the graph.';
+    ORDER.forEach(function (k, i) {
+      var apply = function () {
+        ORDER.forEach(function (k2) { stepEls[k2].classList.remove('current'); });
+        var el = stepEls[k];
+        var trace = route[k];
+        if (trace === null) {
+          el.classList.add('skipped');
+          el.querySelector('.step-trace').textContent = 'Skipped on this route.';
+        } else {
+          el.classList.add('visited', 'current');
+          el.querySelector('.step-trace').textContent = trace;
+          ran += 1;
+        }
+        if (i === ORDER.length - 1) {
+          el.classList.remove('current');
+          ragStatus.textContent = 'Done. ' + ran + ' of ' + ORDER.length + ' steps ran on this route.';
+        }
+      };
+      if (reduceMotion) apply(); else timers.push(setTimeout(apply, i * 520));
+    });
+  }
+  qBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      qBtns.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+      runRoute(btn.getAttribute('data-q'));
+    });
+  });
+
+  /* ---------- Resume highlighter (TF-IDF stand-in for the Gemma pipeline) ---------- */
+  var PRESETS = {
+    pm: "We're hiring an Associate Product Manager. You'll work with sales, operations and engineering teams to find problems worth solving, write requirements, prioritise the roadmap and launch product modules. You'll define metrics, analyse data with SQL, run campaigns and experiments, and automate manual workflows.",
+    da: "We're hiring a Data Analyst to analyse business data with SQL, Python and Excel. You'll reconcile financial and payout data, find mismatches and trends, segment customers, build KPI dashboards in Power BI, and share insights that drive decisions for sales and operations teams.",
+    ds: 'Build machine learning models for prediction and segmentation. Engineer features from time-series data, validate with cross-validation, calibrate probabilities, explain models with SHAP, and build dashboards that inform business decisions.',
+    ai: 'Build LLM applications with retrieval-augmented generation, tool use and agentic workflows. Design routing, memory and evaluation, add guardrails against hallucination, and ship reliable chat experiences in Python with LangChain or LangGraph.'
+  };
+  var STOP = new Set(('a an the and or of to in on for with by from at as is are be been it its this that these those into over ' +
+    'across using use used via than then so we you your our their they them he she his her who what when where how which ' +
+    'll re ve don won can will would should must may might each every all any more most new one two own end work works working ' +
+    'directly learn build built building builds make made set setting up out about also plus like such etc including ' +
+    'hiring role roles experience experiences years strong skills ability able nice have has had do does done get gets ' +
+    'engineer engineers engineering engineered drive drives driving reliable without against worth solving talk share ' +
+    'whose same through it\'s we\'re you\'ll').split(/\s+/));
+  var GROUPS = {
+    deploy: ['deploy', 'deployed', 'deploying', 'deployment', 'deployments', 'ship', 'shipped', 'shipping', 'launch', 'launched', 'launching', 'production', 'live'],
+    integrate: ['integrate', 'integrated', 'integrating', 'integration', 'integrations', 'api', 'apis', 'connector', 'connectors', 'webhook', 'webhooks'],
+    crm: ['crm', 'zoho', 'clevertap', 'hubspot', 'salesforce'],
+    automate: ['automate', 'automated', 'automates', 'automating', 'automation', 'automations', 'workflow', 'workflows', 'n8n', 'manual'],
+    llm: ['llm', 'llms', 'gpt', 'gemma', 'langchain', 'langgraph', 'genai', 'agentic', 'chatbot', 'chatbots', 'chat'],
+    rag: ['rag', 'retrieval', 'retrieve', 'retrieved', 'vector', 'vectors', 'chroma', 'embedding', 'embeddings'],
+    data: ['data', 'dataset', 'datasets', 'etl', 'ingestion', 'sources', 'pipeline', 'pipelines', 'records'],
+    client: ['customer', 'customers', 'client', 'clients', 'partner', 'partners', 'user', 'users'],
+    sql: ['sql', 'postgres', 'postgresql', 'supabase'],
+    dashboard: ['dashboard', 'dashboards', 'kpi', 'kpis', 'bi', 'power', 'reporting', 'visualization', 'visualisation', 'metrics'],
+    analysis: ['analyse', 'analysed', 'analysing', 'analysis', 'analyze', 'analyzed', 'analyzing', 'analytics', 'insight', 'insights', 'trend', 'trends', 'pattern', 'patterns'],
+    model: ['model', 'models', 'modeling', 'ml', 'machine', 'learning', 'lightgbm', 'prediction', 'predictions', 'predict', 'predicting'],
+    explain: ['shap', 'explain', 'explained', 'explaining', 'explainability', 'interpret', 'interpretability'],
+    segment: ['segment', 'segmented', 'segmentation', 'cluster', 'clusters', 'clustering', 'kmeans'],
+    evaluate: ['hallucination', 'hallucinations', 'judge', 'judging', 'guardrail', 'guardrails', 'grounded', 'evaluation', 'evaluate'],
+    memory: ['memory', 'session', 'sessions', 'checkpoint', 'checkpoints'],
+    route: ['route', 'routing', 'router'],
+    people: ['stakeholder', 'stakeholders', 'team', 'teams', 'coordinated', 'coordinate', 'coordinating', 'communicate', 'communication'],
+    python: ['python', 'pandas', 'numpy'],
+    feature: ['feature', 'features'],
+    calibrate: ['calibrate', 'calibrated', 'calibration', 'isotonic'],
+    validate: ['validate', 'validated', 'validation'],
+    decision: ['decision', 'decisions'],
+    web: ['app', 'apps', 'application', 'applications', 'frontend', 'vercel'],
+    timeseries: ['timeseries'],
+    email: ['email', 'emails'],
+    product: ['product', 'products', 'module', 'modules', 'requirement', 'requirements', 'roadmap', 'prioritise', 'prioritize'],
+    growth: ['campaign', 'campaigns', 'journey', 'journeys', 'reactivation', 'reactivate', 'reactivating', 'retention', 'churn', 'engagement', 'experiment', 'experiments'],
+    finance: ['reconcile', 'reconciled', 'reconciliation', 'mismatch', 'mismatches', 'payout', 'payouts', 'payment', 'payments', 'receipts', 'financial', 'invoice', 'invoices'],
+    sales: ['sales', 'lead', 'leads', 'rm', 'rms'],
+    ops: ['operations', 'operational', 'ops', 'escalation', 'escalate', 'escalates', 'ticket', 'tickets']
+  };
+  var LABELS = {
+    deploy: 'shipping to production', integrate: 'integrations', crm: 'CRM tools', automate: 'automation', llm: 'LLMs',
+    rag: 'retrieval', data: 'data pipelines', client: 'customers and partners', sql: 'SQL and Postgres', dashboard: 'dashboards and KPIs',
+    analysis: 'analysis', model: 'ML models', explain: 'explainability', segment: 'segmentation', evaluate: 'evaluation',
+    memory: 'memory', route: 'routing', people: 'working with teams', python: 'Python', feature: 'features',
+    calibrate: 'calibration', validate: 'validation', decision: 'decisions', web: 'web apps', timeseries: 'time series',
+    email: 'email', product: 'product modules', growth: 'campaigns and journeys', finance: 'payout reconciliation',
+    sales: 'sales and leads', ops: 'operations'
+  };
+  var CONCEPT = {};
+  Object.keys(GROUPS).forEach(function (c) { GROUPS[c].forEach(function (w) { CONCEPT[w] = c; }); });
+  function stem(w) {
+    if (w.length > 4 && /ies$/.test(w)) w = w.slice(0, -3) + 'y';
+    else if (w.length > 3 && /s$/.test(w) && !/ss$/.test(w)) w = w.slice(0, -1);
+    if (w.length > 5 && /ing$/.test(w)) w = w.slice(0, -3);
+    else if (w.length > 4 && /ed$/.test(w)) w = w.slice(0, -2);
+    if (w.length > 3 && /e$/.test(w)) w = w.slice(0, -1);
+    return w;
+  }
+  function tokenize(text) {
+    var out = [];
+    text.toLowerCase().replace(/time[\s-]+series/g, 'timeseries').split(/[^a-z0-9]+/).forEach(function (w) {
+      if (w.length < 3 && w !== 'ml' && w !== 'bi' && w !== 'rm') return;
+      if (STOP.has(w) || /^\d+$/.test(w)) return;
+      var t = CONCEPT[w] ? 'c:' + CONCEPT[w] : stem(w);
+      if (!t || STOP.has(t)) return;
+      out.push({ t: t, w: w });
+    });
+    return out;
+  }
+  var lines = all('.line').map(function (el) {
+    var tf = {}, orig = {};
+    tokenize(el.querySelector('.text').textContent).forEach(function (o) {
+      tf[o.t] = (tf[o.t] || 0) + 1;
+      if (!orig[o.t]) orig[o.t] = o.w;
+    });
+    return { el: el, tf: tf, orig: orig };
+  });
+  var N = lines.length;
+  var df = {};
+  lines.forEach(function (l) { Object.keys(l.tf).forEach(function (t) { df[t] = (df[t] || 0) + 1; }); });
+  function idf(t) { return Math.log((N + 1) / ((df[t] || 0) + 1)) + 1; }
+  function vectorize(tf) {
+    var v = {}, sum = 0;
+    Object.keys(tf).forEach(function (t) {
+      var w = (1 + Math.log(tf[t])) * idf(t);
+      v[t] = w; sum += w * w;
+    });
+    return { v: v, norm: Math.sqrt(sum) };
+  }
+  lines.forEach(function (l) { var vec = vectorize(l.tf); l.v = vec.v; l.norm = vec.norm; });
+  function labelFor(t, line) {
+    if (t.indexOf('c:') === 0) return LABELS[t.slice(2)] || t.slice(2);
+    return line.orig[t] || t;
+  }
+  var jd = document.getElementById('jd');
+  var hlStatus = document.getElementById('hl-status');
+  var presetBtns = all('.preset');
+  var TIERS = [['t1', 'Strong match'], ['t2', 'Good match'], ['t3', 'Partial match']];
+  function clearHighlights() {
+    lines.forEach(function (l) {
+      l.el.classList.remove('t1', 't2', 't3');
+      l.el.querySelector('.tier').textContent = '';
+      l.el.querySelector('.why').textContent = '';
+    });
+  }
+  function highlight() {
+    clearHighlights();
+    var text = jd.value.trim();
+    if (text.split(/\s+/).length < 8) {
+      hlStatus.textContent = 'Add a few more sentences of the job description, or pick a role above.';
+      return;
+    }
+    var jtf = {};
+    tokenize(text).forEach(function (o) { jtf[o.t] = (jtf[o.t] || 0) + 1; });
+    var jvec = vectorize(jtf);
+    var scored = lines.map(function (l) {
+      var dot = 0, shared = [];
+      Object.keys(l.v).forEach(function (t) {
+        if (jvec.v[t]) { var c = l.v[t] * jvec.v[t]; dot += c; shared.push([t, c]); }
+      });
+      shared.sort(function (a, b) { return b[1] - a[1]; });
+      return { l: l, score: (l.norm && jvec.norm) ? dot / (l.norm * jvec.norm) : 0, shared: shared };
+    }).filter(function (x) { return x.score > 0.03; })
+      .sort(function (a, b) { return b.score - a.score; })
+      .slice(0, 6);
+    scored.forEach(function (x, i) {
+      var tier = TIERS[Math.min(2, Math.floor(i / 2))];
+      x.l.el.classList.add(tier[0]);
+      x.l.el.querySelector('.tier').textContent = tier[1];
+      var seen = {}, words = [];
+      x.shared.forEach(function (p) {
+        var label = labelFor(p[0], x.l);
+        if (!seen[label] && words.length < 4) { seen[label] = true; words.push(label); }
+      });
+      x.l.el.querySelector('.why').textContent = 'Matched on ' + words.join(', ');
+    });
+    hlStatus.textContent = scored.length
+      ? 'Highlighted the ' + scored.length + ' best-matching lines out of ' + N + '.'
+      : 'No lines matched. Try a longer description or one of the roles above.';
+  }
+  presetBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      presetBtns.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+      jd.value = PRESETS[btn.getAttribute('data-preset')];
+      highlight();
+    });
+  });
+  jd.addEventListener('input', function () {
+    presetBtns.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+  });
+  document.getElementById('run-hl').addEventListener('click', highlight);
+  jd.value = PRESETS.pm;
+  highlight();
+
+  /* ---------- CV download ---------- */
+  // On a normal host (Vercel) the CV links point straight at assets/Sandeep_CV.pdf.
+  // The claude.ai preview carries the PDF inline and offers it through the viewer's downloads capability.
+  var cvLinks = all('[data-cv]');
+  var cvB64 = window.CV_PDF_BASE64;
+  if (cvB64) {
+    cvLinks.forEach(function (a) { a.hidden = true; });
+    if (window.claude && typeof window.claude.use === 'function') {
+      window.claude.use('downloads').then(function (downloads) {
+        if (!downloads) return;
+        cvLinks.forEach(function (a) {
+          a.hidden = false;
+          a.addEventListener('click', function (e) {
+            e.preventDefault();
+            var bin = atob(cvB64);
+            var bytes = new Uint8Array(bin.length);
+            for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+            downloads.save({ filename: 'Sandeep_CV.pdf', data: new Blob([bytes], { type: 'application/pdf' }) })
+              .catch(function (err) {
+                if (err && (err.code === 'unavailable' || err.code === 'not_granted')) {
+                  cvLinks.forEach(function (x) { x.hidden = true; });
+                }
+              });
+          });
+        });
+      }, function () { /* leave the links hidden */ });
+    }
+  }
+
+  /* ---------- Copy email ---------- */
+  var EMAIL = 'iitdelhisandeep@gmail.com';
+  var copyStatus = document.getElementById('copy-status');
+  function fallbackCopy() {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = EMAIL;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      return ok;
+    } catch (e) { return false; }
+  }
+  function reportCopy(ok) {
+    copyStatus.textContent = ok ? 'Email address copied.' : 'Copy is blocked here. Select the address above and copy it.';
+  }
+  document.getElementById('copy-email').addEventListener('click', function () {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(EMAIL).then(function () { reportCopy(true); }, function () { reportCopy(fallbackCopy()); });
+    } else {
+      reportCopy(fallbackCopy());
+    }
+  });
+})();
+</script>
+</body>
+</html>
